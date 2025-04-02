@@ -24,8 +24,17 @@ Visit the deployed site: [Memo Cards App](https://inventory-mgmt-app-1aceae60ebf
 
 #### Favicon
 
-
 ![](documentation/features/favicon.png)
+
+**Custom Favicon**
+
+A personalized favicon has been added to enhance branding and improve user experience in the browser tab.
+
+**Details**:
+- The favicon is a simplified version of the MemoCards logo.
+- It helps distinguish the tab visually among others.
+
+
 
 #### Navigation Bar
 
