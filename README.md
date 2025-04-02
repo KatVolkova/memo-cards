@@ -27,9 +27,24 @@ Visit the deployed site: [Memo Cards App](https://inventory-mgmt-app-1aceae60ebf
 
 ![](documentation/features/favicon.png)
 
-#### Navigation
+#### Navigation Bar
 
 ![]()
+
+The **MemoCards** app features a responsive navigation bar located at the top of every page for seamless user experience.
+
+The Navigation Bar displays:
+- the app **logo** and **name**.
+- **Navigation Links**:
+  - `Home` — redirects to the homepage.
+  - `Log In` — directs users to the authentication page.
+  - `Register` — allows new users to sign up.
+
+Styling & Behavior:
+
+- Active page links are underlined for better user feedback.
+- Includes hover transitions for better interactivity.
+- Fully responsive — adapts to mobile and desktop viewports.
 
 
 #### Footer
