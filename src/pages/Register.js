@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import styles from '../styles/AuthForm.module.css';
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -27,24 +28,24 @@ const Register = () => {
   };
 
   return (
-    <div className="container mt-4">
-      <h2>Registration Form</h2>
+    <div className={`container mt-4 ${styles.formContainer}`}>
+      <h2 className={styles.formTitle}>Registration Form</h2>
       <form onSubmit={handleSubmit}>
-        <div className="mb-3">
+        <div className={styles.formInput}>
           <input className="form-control" name="username" placeholder="Username" onChange={handleChange} required />
         </div>
-        <div className="mb-3">
+        <div className={styles.formInput}>
           <input className="form-control" name="email" placeholder="Email" type="email" onChange={handleChange} required />
         </div>
-        <div className="mb-3">
+        <div className={styles.formInput}>
           <input className="form-control" name="password1" placeholder="Password" type="password" onChange={handleChange} required />
         </div>
-        <div className="mb-3">
+        <div className={styles.formInput}>
           <input className="form-control" name="password2" placeholder="Confirm Password" type="password" onChange={handleChange} required />
         </div>
-        <button type="submit" className="btn btn-warning">Submit</button>
+        <button type="submit" className={`btn btn-warning ${styles.formButton}`}>Submit</button>
       </form>
-      {message && <div className="mt-3 alert alert-info">{message}</div>}
+      {message && <div className={`alert alert-info ${styles.alertBox}`}>{message}</div>}
     </div>
   );
 };
